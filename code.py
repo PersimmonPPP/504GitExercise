@@ -1,4 +1,16 @@
 def function1(a):
+    '''
+    Count the number of distinct elements in a string list.
+    
+    Parameters
+    ----------
+    a :   [str]
+    
+    Returns
+    -------
+    {str : int}
+        the count of distinct elements in a string list
+    '''
     b = dict()
     for c in a:
         if c not in b:
@@ -8,6 +20,9 @@ def function1(a):
     return b
 
 def function2(a):
+    '''
+    Print the prabablity of each string character.
+    '''
     print('freqs')
     total = float(sum([a[b] for b in a.keys()]))
     for b in a.keys():
